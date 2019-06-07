@@ -4,7 +4,7 @@ provider "aws" {
 
 module "munki-repo" {
   source          = "grahamgilbert/munki-repo/aws"
-  version         = "0.0.9"
+  version         = "0.1.0"
   munki_s3_bucket = "macdevops2019-demo"
   username        = "${var.username}"
   password        = "${var.password}"
