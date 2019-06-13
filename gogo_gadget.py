@@ -9,7 +9,7 @@ def get_output(cmd):
     process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
     while True:
         output = process.stdout.readline()
-        if output == '' and process.poll() is not None:
+        if output == "" and process.poll() is not None:
             break
         if output:
             print(output)
@@ -21,8 +21,12 @@ def main():
     print(get_output(["terraform", "init"]))
     print(get_output(["terraform", "plan"]))
     print(get_output(["terraform", "apply", "-auto-approve"]))
-    repo_url = subprocess.check_output(["terraform", "output", "cloudfront_url"]).strip()
-    munki_bucket = subprocess.check_output(["terraform", "output", "munki_bucket_id"]).strip()
+    repo_url = subprocess.check_output(
+        ["terraform", "output", "cloudfront_url"]
+    ).strip()
+    munki_bucket = subprocess.check_output(
+        ["terraform", "output", "munki_bucket_id"]
+    ).strip()
     username = subprocess.check_output(["terraform", "output", "username"]).strip()
     password = subprocess.check_output(["terraform", "output", "password"]).strip()
     pwd_string = "{}:{}".format(username, password)
