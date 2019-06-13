@@ -7,7 +7,7 @@
 		<key>created_by</key>
 		<string>graham_gilbert</string>
 		<key>creation_date</key>
-		<date>2019-06-02T19:39:25Z</date>
+		<date>2019-06-13T16:17:44Z</date>
 		<key>munki_version</key>
 		<string>3.6.2.3776</string>
 		<key>os_version</key>
@@ -19,20 +19,16 @@
 	<array>
 		<string>production</string>
 	</array>
-	<key>category</key>
-	<string>Web Browsers</string>
 	<key>description</key>
 	<string>Chrome is a fast, simple, and secure web browser, built for the modern web.</string>
-	<key>developer</key>
-	<string>Google</string>
 	<key>display_name</key>
 	<string>Google Chrome</string>
 	<key>installer_item_hash</key>
-	<string>e15d4fc6311fd56368d2ced8c6ae7bf7aa67d54fc4312fa665d41a03c51f9a44</string>
+	<string>0a9f5b16c66d7d0cd5bdb5f4974fcbd6634418dba724dc450f091b91f4565f35</string>
 	<key>installer_item_location</key>
-	<string>apps/GoogleChrome-74.0.3729.169.dmg</string>
+	<string>apps/GoogleChrome-75.0.3770.90.dmg</string>
 	<key>installer_item_size</key>
-	<integer>76905</integer>
+	<integer>78486</integer>
 	<key>installer_type</key>
 	<string>copy_from_dmg</string>
 	<key>installs</key>
@@ -43,9 +39,9 @@
 			<key>CFBundleName</key>
 			<string>Chrome</string>
 			<key>CFBundleShortVersionString</key>
-			<string>74.0.3729.169</string>
+			<string>75.0.3770.90</string>
 			<key>CFBundleVersion</key>
-			<string>3729.169</string>
+			<string>3770.90</string>
 			<key>minosversion</key>
 			<string>10.10.0</string>
 			<key>path</key>
@@ -76,6 +72,6 @@
 	<key>uninstallable</key>
 	<true/>
 	<key>version</key>
-	<string>74.0.3729.169</string>
+	<string>75.0.3770.90</string>
 </dict>
 </plist>

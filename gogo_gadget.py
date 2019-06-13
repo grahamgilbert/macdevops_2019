@@ -6,7 +6,15 @@ import os
 
 
 def get_output(cmd):
-    return subprocess.check_output(cmd).strip()
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    while True:
+        output = process.stdout.readline()
+        if output == '' and process.poll() is not None:
+            break
+        if output:
+            print(output)
+    rc = process.poll()
+    return rc
 
 
 def main():
