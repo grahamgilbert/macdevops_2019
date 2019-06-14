@@ -11,6 +11,10 @@ module "munki-repo" {
   prefix          = "macdevops2019demo"
 }
 
+# Please please please override these.
+
+# Please.
+
 variable "username" {
   default = "munki"
 }
@@ -18,6 +22,8 @@ variable "username" {
 variable "password" {
   default = "ilovemunki"
 }
+
+# Outputs are used in gogo_gadget.py to generate ManagedInstalls.mobileconfig
 
 output "cloudfront_url" {
   value = "${module.munki-repo.cloudfront_url}"
